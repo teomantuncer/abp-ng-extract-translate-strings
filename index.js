@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-'use strict'
 const walkSync = require('walk-sync');
 const fs = require('fs')
 const yargs = require('yargs/yargs')
@@ -14,6 +12,9 @@ const result = []
 paths.map(o => {
 	const content = fs.readFileSync(path.resolve(dir, o))
 	const matches = content.toString().match(re)
+	if (!matches || matches.length === 0) {
+		return
+	}
 	matches.map(x => {
 		if (result.indexOf(x) === -1) {
 			result.push(x)
