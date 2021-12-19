@@ -1,3 +1,6 @@
+#!/usr/bin/env node
+'use strict';
+
 const walkSync = require('walk-sync');
 const fs = require('fs')
 const yargs = require('yargs/yargs')
@@ -21,8 +24,17 @@ paths.map(o => {
 		}
 	})
 })
+
+const ngTranslate = {
+	"Culture": "en",
+	"Texts": {}
+}
+result.map(o => {
+	const key = o.replace(/'::/igm, "'").replace(/'/igm, '')
+	ngTranslate.Texts[key] = ""
+})
 if (argv.file) {
-	fs.writeFileSync(argv.file, JSON.stringify(result))
+	fs.writeFileSync(argv.file, JSON.stringify(ngTranslate))
 } else {
-	console.log(result)
+	console.log(ngTranslate)
 }

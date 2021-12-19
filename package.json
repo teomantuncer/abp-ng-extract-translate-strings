@@ -14,5 +14,5 @@
   },
   "devDependencies": {},
   "license": "gpl-3.0",
-  "bin": {"ng-extract-translate": "./bin/ng-extract-translate"}
+  "bin": {"ng-extract-translate": "./index.js"}
 }
