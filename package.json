@@ -1,0 +1,17 @@
+{
+  "name": "abp-ng-extract-translate-strings",
+  "version": "0.0.1",
+  "author": "Teoman Tuncer <teomantuncer@gmail.com> (https://teomantuncer.com)",
+  "description": "This project will extract your translate strings from angular src.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/teomantuncer/abp-ng-extract-translate-strings.git"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "walk-sync": "^3.0.0",
+    "yargs": "^17.3.0"
+  },
+  "devDependencies": {},
+  "license": "gpl-3.0"
+}
