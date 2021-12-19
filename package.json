@@ -1,6 +1,6 @@
 {
   "name": "abp-ng-extract-translate-strings",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Teoman Tuncer <teomantuncer@gmail.com> (https://teomantuncer.com)",
   "description": "This project will extract your translate strings from angular src.",
   "repository": {
